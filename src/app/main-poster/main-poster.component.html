@@ -1,0 +1,24 @@
+<div class="main-poster" [ngClass]="{'mobile-poster':isMobile}" >
+    <app-navbar [isHome]="true" *ngIf="!isMobile" ></app-navbar>
+    <app-mobile-navbar [isHome]="true" *ngIf="isMobile" ></app-mobile-navbar>
+    <div class="layer">
+    </div>
+    <div>
+        <h1 [@fadeInFromBottomTy20] class="main-desc">Welcome to <span class="highlighter-text">Milaya Capital’s</span> Diverse Business
+            Ventures</h1>
+    </div>
+
+    <div>
+        <p class="desc" [@fadeInFromBottomTy20]>
+            Milaya Capital Limited is a company entirely owned by its management and it is free from any ownership.
+            Neither is controlled by any banking, financial, or insurance organization. Milaya Capital has built its
+            reputation by being fully committed and transparent in its dealings ensuring efficiency and effectiveness in
+            all aspects of today’s business requirements.
+        </p>
+
+        <button type="button" class="btn btn-primary about-btn" [@fadeInFromBottomTy20]>About Us <i class="bi bi-box-arrow-in-right"></i>
+        </button>
+    </div>
+
+
+</div>

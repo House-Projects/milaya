@@ -1,0 +1,25 @@
+<div class="container">
+  <app-navbar *ngIf="showNavbar && !isMobile"></app-navbar>
+</div>
+
+<app-mobile-navbar *ngIf="showNavbar && isMobile"></app-mobile-navbar>
+
+<div class="window home" [ngClass]="{'mobile': isMobile}">
+  <router-outlet name="primary"></router-outlet>
+</div>
+
+<div class="window about" [ngClass]="{'mobile': isMobile}">
+  <router-outlet name="primary"></router-outlet>
+</div>
+
+<div class="window mission" [ngClass]="{'mobile': isMobile}">
+  <router-outlet name="primary"></router-outlet>
+</div>
+
+<div class="window portfolio" [ngClass]="{'mobile': isMobile}">
+  <router-outlet name="primary"></router-outlet>
+</div>
+
+<div class="window contact" [ngClass]="{'mobile': isMobile}">
+  <router-outlet name="primary"></router-outlet>
+</div>
